@@ -1,4 +1,4 @@
-FROM cypress/browsers:chrome67 as cypress
+FROM cypress/browsers:chrome69 as cypress
 
 WORKDIR /app
 
@@ -20,4 +20,4 @@ RUN npx cypress verify
 COPY cypress cypress
 COPY cypress.json cypress.json
 
-# RUN npm run test:e2e:ci
+# RUN npm run test:local
