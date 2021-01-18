@@ -3,17 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test:e2e:ci": "cypress run  --env NODE_ENV=ci",
-    "cypress:open": "cypress open --env NODE_ENV=local",
-    "start": "cypress open --env NODE_ENV=ci",
-    "start:local": "cypress open --env NODE_ENV=local",
-    "run:local": "cypress open --env NODE_ENV=local",
-    "e2e:ci:mobile": "cypress run --config viewportWidth=375,viewportHeight=812",
-    "e2e:ci:tablet": "cypress run --config viewportWidth=768,viewportHeight=800",
-    "e2e:ci:desktop": "cypress run --config viewportWidth=1280,viewportHeight=720",
-    "e2e:mobile": "cypress open --config viewportWidth=375,viewportHeight=812",
-    "e2e:tablet": "cypress open --config viewportWidth=768,viewportHeight=800",
-    "e2e:desktop": "cypress open --config viewportWidth=1280,viewportHeight=720"
+    "test:local": "cypress run  --env NODE_ENV=local",
+    "start": "cypress open --env NODE_ENV=local",
   },
   "devDependencies": {
     "@cypress/browserify-preprocessor": "^3.0.1",
