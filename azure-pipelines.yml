@@ -10,10 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
 - script: |
-    docker build -t e2e
+    docker build . -t e2e
     docker run e2e npm run test:local
-  displayName: 'Run a multi-line script'
+  displayName: 'Docker build/run'
