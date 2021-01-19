@@ -3,29 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test:e2e:ci": "cypress run  --env NODE_ENV=ci",
-    "cypress:open": "cypress open --env NODE_ENV=local",
-    "start": "cypress open --env NODE_ENV=ci",
-    "start:local": "cypress open --env NODE_ENV=local",
-    "e2e:ci:mobile": "cypress run --config viewportWidth=375,viewportHeight=812",
-    "e2e:ci:tablet": "cypress run --config viewportWidth=768,viewportHeight=800",
-    "e2e:ci:desktop": "cypress run --config viewportWidth=1280,viewportHeight=720",
-    "e2e:mobile": "cypress open --config viewportWidth=375,viewportHeight=812",
-    "e2e:tablet": "cypress open --config viewportWidth=768,viewportHeight=800",
-    "e2e:desktop": "cypress open --config viewportWidth=1280,viewportHeight=720"
+    "test:local": "cypress run  --env NODE_ENV=local",
+    "start": "cypress open --env NODE_ENV=local",
   },
   "devDependencies": {
-    "@cypress/browserify-preprocessor": "^2.2.1",
-    "@types/cypress-cucumber-preprocessor": "^1.14.1",
-    "@types/node": "^13.9.0",
-    "cypress": "^4.3.0",
+    "@cypress/browserify-preprocessor": "^3.0.1",
+    "@types/cypress-cucumber-preprocessor": "^4.0.0",
+    "@types/node": "^14.14.20",
+    "cypress": "^6.2.0",
     "cypress-commands": "^1.1.0",
-    "cypress-cucumber-preprocessor": "^2.2.1",
+    "cypress-cucumber-preprocessor": "^4.0.0",
     "cypress-promise": "^1.1.0",
-    "cypress-xpath": "^1.4.0",
-    "ts-loader": "^6.2.1",
-    "tsify": "^4.0.1",
-    "typescript": "^3.8.3"
+    "cypress-xpath": "^1.6.1",
+    "ts-loader": "^8.0.14",
+    "tsify": "^5.0.2",
+    "typescript": "^4.1.2"
   },
   "dependencies": {}
 }

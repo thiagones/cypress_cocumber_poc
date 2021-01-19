@@ -1,3 +1,3 @@
 module.exports = {
-    baseUrl: 'https://www.google.com'
+    baseUrl: 'http://localhost:3000/renda-variavel-notas-negociacao'
 };
